@@ -12,6 +12,8 @@ body {
 }
 
 /* section 1 css */
+/* Default styles (for screens wider than 600px) */
+
 .section1 {
     width: 100%;
     height: 100%;
@@ -53,7 +55,8 @@ nav {
     font-size: 25px;
     transition: all .5s;
 }
-.opt:hover{
+
+.opt:hover {
     color: #F64B3C;
 }
 
@@ -88,12 +91,53 @@ nav {
     font-size: 25px;
     transition: all .5s;
 }
-.btn1:hover{
+
+.btn1:hover {
     background-color: transparent;
     border: 4px solid #F64B3C;
     color: #F64B3C;
-
 }
+
+/* Media query for screens 600px and below */
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        padding: 0 20px;
+        height: auto;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .opts {
+        display: none;
+    }
+
+    .para_par1 {
+        width: 90%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .offer {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .para1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .btn1 {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
 
 /* section two css */
 
@@ -108,7 +152,6 @@ nav {
     background-image: url(./allpic/second_BP.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    /* padding: 0 90px 0 90px; */
 }
 
 .para2 {
@@ -173,6 +216,52 @@ nav {
     font-size: 25px;
     font-weight: 500;
 }
+@media only screen and (max-width: 600px) {
+    .section2 {
+        padding: 20px;
+    }
+
+    .para2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .para3 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .persons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .person1,
+    .person2,
+    .person3 {
+        margin-bottom: 20px;
+    }
+
+    .person2 img {
+        width: 180px;
+    }
+
+    .name1,
+    .name2,
+    .name3 {
+        font-size: 24px;
+    }
+
+    .role1,
+    .role2,
+    .role3 {
+        font-size: 18px;
+    }
+}
+
+
 
 /* third section css */
 
@@ -227,6 +316,45 @@ nav {
     color: white;
 
 }
+@media only screen and (max-width: 600px) {
+    .section3 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .bur_pic {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .bur_pic img {
+        width: 80%;
+    }
+
+    .para_par3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .para4 {
+        font-size: 40px;
+    }
+
+    .para5 {
+        font-size: 18px;
+        margin: 20px 0;
+        padding: 0 10px;
+    }
+
+    .btn2 {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
 
 
 /* fourth section css */
@@ -269,6 +397,39 @@ nav {
 .bur_pic2 img {
     border-radius: 50%;
 }
+@media only screen and (max-width: 600px) {
+    .section4 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .para_par4 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .para6 {
+        font-size: 40px;
+    }
+
+    .para7 {
+        font-size: 18px;
+        margin: 20px 0;
+        padding: 0 10px;
+    }
+
+    .bur_pic2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .bur_pic2 img {
+        width: 80%;
+    }
+}
+
+
 
 /* fifth section css */
 
@@ -335,6 +496,47 @@ nav {
     font-size: 30px;
     font-weight: bolder;
 }
+@media only screen and (max-width: 600px) {
+    .para_par5 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .para8 {
+        font-size: 60px;
+    }
+
+    .para9 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .stats {
+        flex-wrap: wrap;
+    }
+
+    .cust,
+    .out,
+    .count {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+
+    .cust1,
+    .out1,
+    .count1 {
+        font-size: 50px;
+    }
+
+    .cust2,
+    .out2,
+    .count2 {
+        font-size: 20px;
+    }
+}
+
+
 
 /* sixth section css */
 .section6 {
@@ -409,6 +611,49 @@ nav {
     color: #F64B3C;
 
 }
+@media only screen and (max-width: 600px) {
+    .section6 {
+        padding: 20px;
+    }
+
+    .para10 {
+        font-size: 40px;
+    }
+
+    .deals {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .deal1,
+    .deal2,
+    .deal3 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .pack {
+        font-size: 24px;
+    }
+
+    .prise {
+        font-size: 24px;
+    }
+
+    .pack_para {
+        font-size: 16px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .btn4 {
+        width: 80%;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
 
 /* seventh section css */
 .section7 {
@@ -445,6 +690,22 @@ nav {
     font-weight: bolder;
     text-align: center;
 }
+@media only screen and (max-width: 600px) {
+    .para_par6 {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .para11 {
+        font-size: 20px;
+    }
+
+    .para12 {
+        font-size: 30px;
+    }
+}
+
 
 
 /* eight section css */
@@ -511,6 +772,49 @@ input {
     border: none;
     border-radius: 0 50px 50px 0;
 }
+@media only screen and (max-width: 600px) {
+    .section8 {
+        padding: 20px;
+    }
+
+    .para_par7 {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .para13 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .para14 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .search {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+
+    .btn5 {
+        width: 100%;
+        height: 50px;
+        font-size: 24px;
+        border-radius: 25px;
+    }
+}
+
 
 /* ninth section css */
 
@@ -595,4 +899,53 @@ input {
 .ser_opt:hover,
 .oth_opt:hover{
     color: #F64B3C;
+}
+@media only screen and (max-width: 600px) {
+    .section9 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .title {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .para15 {
+        font-size: 18px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .more_about {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .about,
+    .services,
+    .other {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .abo_opt,
+    .ser_opt,
+    .oth_opt {
+        font-size: 20px;
+    }
 }
