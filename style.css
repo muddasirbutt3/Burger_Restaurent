@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* section 1 css */
+.section1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./allpic/first_pic.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section1 img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(black, transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px 0 90px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.opts {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opt {
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    transition: all .5s;
+}
+.opt:hover{
+    color: #F64B3C;
+}
+
+.para_par1 {
+    width: 50%;
+    height: 500px;
+    margin-left: 90px;
+}
+
+.offer {
+    color: white;
+    font-size: 100px;
+    font-weight: bolder;
+    line-height: 100px;
+    margin-bottom: 40px;
+}
+
+.para1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.btn1 {
+    width: 350px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #F64B3C;
+    color: white;
+    font-size: 25px;
+    transition: all .5s;
+}
+.btn1:hover{
+    background-color: transparent;
+    border: 4px solid #F64B3C;
+    color: #F64B3C;
+
+}
+
+/* section two css */
+
+.section2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F64B3C;
+    background-image: url(./allpic/second_BP.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding: 0 90px 0 90px; */
+}
+
+.para2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #F64B3C;
+    margin-bottom: 30px;
+}
+
+.para3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.persons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 60px 0;
+}
+
+.person1 img,
+.person2 img,
+.person3 img {
+    border-radius: 50%;
+}
+
+.person2 img {
+    width: 238px;
+}
+
+.para_par2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.about1,
+.about2,
+.about3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name1,
+.name2,
+.name3 {
+    color: #F64B3C;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.role1,
+.role2,
+.role3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* third section css */
+
+.section3 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(95, 161, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 130px 0 130px;
+    background-color: #F64B3C;
+}
+
+.bur_pic {
+    width: 50%;
+}
+
+.bur_pic img {
+    border-radius: 50%;
+}
+
+.para_par3 {
+    width: 50%;
+}
+
+.para4 {
+    color: white;
+    font-size: 80px;
+}
+
+.para5 {
+    color: white;
+    font-size: 25px;
+    margin: 30px 0 30px 0;
+}
+
+.btn2 {
+    width: 350px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    color: #F64B3C;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: all .5s;
+}
+.btn2:hover{
+    background-color: transparent;
+    border: 4px solid white;
+    color: white;
+
+}
+
+
+/* fourth section css */
+
+.section4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px 0 120px;
+    background-image: url(./allpic/fourth_bp.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.para_par4 {
+    width: 50%;
+}
+
+.para6 {
+    color: #F64B3C;
+    font-size: 80px;
+}
+
+.para7 {
+    color: #F64B3C;
+    font-size: 30px;
+    margin: 30px 0 50px 0;
+}
+
+.bur_pic2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bur_pic2 img {
+    border-radius: 50%;
+}
+
+/* fifth section css */
+
+.section5 {
+    width: 100%;
+    height: 100%;
+    background-color: #F64B3C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.para_par5 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.para8 {
+    font-size: 100px;
+}
+
+.para9 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cust,
+.out,
+.count {
+    width: 300px;
+    height: 300px;
+    border: 4px solid white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cust1,
+.out1,
+.count1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.cust2,
+.out2,
+.count2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* sixth section css */
+.section6 {
+    width: 100%;
+    height: 100%;
+    color: #F64B3C;
+    background-image: url(./allpic/fifth_BP.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.para10 {
+    font-size: 70px;
+    font-weight: bolder;
+
+}
+
+.deals {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.deal1,
+.deal2,
+.deal3 {
+    width: 330px;
+    height: 400px;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+
+.pack {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.prise {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.pack_para {
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.btn4 {
+    width: 300px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #F64B3C;
+    color: white;
+    font-size: 25px;
+    transition: all .5s;
+}
+.btn4:hover{
+    background-color: transparent;
+    border: 4px solid #F64B3C;
+    color: #F64B3C;
+
+}
+
+/* seventh section css */
+.section7 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./allpic/sixth_BP.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para_par6 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.para11 {
+    color: white;
+    font-size: 30px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.para12 {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+/* eight section css */
+
+.section8 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./allpic/seven_BP.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.para_par7 {
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.para13 {
+    font-size: 80px;
+    font-weight: bolder;
+    color: #F64B3C;
+}
+
+.para14 {
+    width: 70%;
+    font-size: 30px;
+    color: #F64B3C;
+    text-align: center;
+}
+
+.search {
+    width: 670px;
+    height: 60px;
+    display: flex;
+
+}
+
+input {
+    width: 450px;
+    height: 60px;
+    border: none;
+    padding: 0 0 0 30px;
+    border-radius: 50px 0 0 50px;
+    margin: 0px;
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+
+}
+
+.btn5 {
+    width: 220px;
+    height: 60px;
+    background-color: #F64B3C;
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+    border: none;
+    border-radius: 0 50px 50px 0;
+}
+
+/* ninth section css */
+
+.section9 {
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.title {
+    width: 35%;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+.para15 {
+    font-size: 25px;
+
+}
+
+.icon img {
+    border-radius: 50%;
+}
+
+.more_about {
+    width: 50%;
+    height: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: start;
+    flex-direction: column;
+}
+
+.abo_opt {
+    font-size: 30px;
+    transition: all .5s;
+}
+
+.services {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: start;
+    flex-direction: column;
+}
+
+.ser_opt {
+    font-size: 30px;
+    transition: all .5s;
+}
+
+.other {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: start;
+    flex-direction: column;
+}
+
+.oth_opt {
+    font-size: 30px;
+    transition: all .5s;
+}
+.abo_opt:hover,
+.ser_opt:hover,
+.oth_opt:hover{
+    color: #F64B3C;
+}
