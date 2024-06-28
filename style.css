@@ -12,7 +12,6 @@ body {
 }
 
 /* section 1 css */
-/* Default styles (for screens wider than 600px) */
 
 .section1 {
     width: 100%;
@@ -20,6 +19,7 @@ body {
     background-image: url(./allpic/first_pic.webp);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .section1 img {
@@ -32,7 +32,7 @@ nav {
     height: 200px;
     background-image: linear-gradient(black, transparent);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0 90px 0 90px;
 }
@@ -67,11 +67,14 @@ nav {
 }
 
 .offer {
-    color: white;
+    color:white;
     font-size: 100px;
     font-weight: bolder;
     line-height: 100px;
     margin-bottom: 40px;
+} 
+span{
+    color:#F64B3C;
 }
 
 .para1 {
@@ -100,13 +103,21 @@ nav {
 
 /* Media query for screens 600px and below */
 @media only screen and (max-width: 600px) {
+    .section1{
+        background-position: center;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     nav {
         flex-direction: column;
-        padding: 0 20px;
         height: auto;
     }
 
     .logo {
+        margin-top: 30px;
         width: 80px;
     }
 
@@ -115,14 +126,20 @@ nav {
     }
 
     .para_par1 {
-        width: 90%;
+        width: 100%;
+        height: 350px;
         margin-left: 0;
         padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .offer {
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 45px;
+        line-height: 50px;
         margin-bottom: 20px;
     }
 
@@ -132,7 +149,7 @@ nav {
     }
 
     .btn1 {
-        width: 100%;
+        width: 90%;
         height: 50px;
         font-size: 20px;
     }
@@ -173,16 +190,20 @@ nav {
     width: 80%;
     margin: 60px 0;
 }
-
+.person1 ,
+.person2 ,
+.person3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .person1 img,
 .person2 img,
 .person3 img {
     border-radius: 50%;
 }
 
-.person2 img {
-    width: 238px;
-}
 
 .para_par2 {
     display: flex;
@@ -218,46 +239,45 @@ nav {
 }
 @media only screen and (max-width: 600px) {
     .section2 {
+        height: auto;
         padding: 20px;
+        background-position: center;
+    }
+    .para_par2 {
+        width: 100%;
     }
 
     .para2 {
-        font-size: 30px;
-        margin-bottom: 20px;
+        font-size: 40px;
+        margin-bottom: 10px;
     }
 
     .para3 {
         font-size: 18px;
-        padding: 0 10px;
     }
+ .person1 img,
+.person2 img,
+.person3 img {
+    width: 150px;
+} 
 
     .persons {
-        flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
         width: 100%;
         margin: 30px 0;
-    }
-
-    .person1,
-    .person2,
-    .person3 {
-        margin-bottom: 20px;
-    }
-
-    .person2 img {
-        width: 180px;
     }
 
     .name1,
     .name2,
     .name3 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .role1,
     .role2,
     .role3 {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
@@ -318,12 +338,13 @@ nav {
 }
 @media only screen and (max-width: 600px) {
     .section3 {
+        height: auto;
         flex-direction: column;
         padding: 20px;
     }
 
     .bur_pic {
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
@@ -349,7 +370,7 @@ nav {
     }
 
     .btn2 {
-        width: 100%;
+        width: 80%;
         height: 50px;
         font-size: 20px;
     }
@@ -397,10 +418,28 @@ nav {
 .bur_pic2 img {
     border-radius: 50%;
 }
+.btn6 {
+    width: 350px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #F64B3C;
+    color: white;
+    font-size: 25px;
+    transition: all .5s;
+}
+
+.btn6:hover {
+    background-color: transparent;
+    border: 4px solid #F64B3C;
+    color: #F64B3C;
+}
 @media only screen and (max-width: 600px) {
     .section4 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 20px;
+        height: auto;
+        background-position: center;
     }
 
     .para_par4 {
@@ -419,6 +458,11 @@ nav {
         padding: 0 10px;
     }
 
+    .btn6 {
+        width: 80% ;
+        height: 50px;
+        font-size: 20px;
+    }
     .bur_pic2 {
         width: 100%;
         justify-content: center;
@@ -497,22 +541,28 @@ nav {
     font-weight: bolder;
 }
 @media only screen and (max-width: 600px) {
+    .section5{
+        padding-top: 15px;
+        height: auto;
+    }
     .para_par5 {
-        width: 80%;
+        width: 100%;
+        padding: 0 10px;
         text-align: center;
     }
 
     .para8 {
-        font-size: 60px;
+        font-size: 45px;
     }
 
     .para9 {
         font-size: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .stats {
         flex-wrap: wrap;
+        margin-top: 20px;
     }
 
     .cust,
@@ -614,22 +664,25 @@ nav {
 @media only screen and (max-width: 600px) {
     .section6 {
         padding: 20px;
+        background-position: center;
+        height: auto;
     }
 
     .para10 {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .deals {
         flex-direction: column;
-        margin-top: 60px;
+        margin-top: 30px;
+        flex-wrap: wrap;
     }
 
     .deal1,
     .deal2,
     .deal3 {
-        width: 90%;
-        height: auto;
+        width: 230px;
+        height: 300px;
         margin-bottom: 30px;
     }
 
@@ -638,19 +691,19 @@ nav {
     }
 
     .prise {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .pack_para {
-        font-size: 16px;
-        padding: 0 10px;
+        font-size: 14px;
+        /* padding: 0 10px; */
         text-align: center;
     }
 
     .btn4 {
-        width: 80%;
-        height: 50px;
-        font-size: 20px;
+        width: 70%;
+        height: 40px;
+        font-size: 16px;
     }
 }
 
@@ -690,7 +743,12 @@ nav {
     font-weight: bolder;
     text-align: center;
 }
+
 @media only screen and (max-width: 600px) {
+    .section7{
+        background-position: center;
+        height: 400px;
+    }
     .para_par6 {
         width: 90%;
         height: auto;
@@ -703,6 +761,7 @@ nav {
 
     .para12 {
         font-size: 30px;
+        margin-top: 30px;
     }
 }
 
@@ -772,46 +831,58 @@ input {
     border: none;
     border-radius: 0 50px 50px 0;
 }
+
 @media only screen and (max-width: 600px) {
     .section8 {
         padding: 20px;
+        height: 400px;
+        background-position: center;
     }
 
     .para_par7 {
         width: 90%;
         height: auto;
-        padding: 20px;
+        /* padding: 20px; */
     }
 
     .para13 {
         font-size: 40px;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .para14 {
         width: 100%;
         font-size: 20px;
+        margin-bottom: 15px;
     }
 
     .search {
         width: 100%;
+        height: auto;
         flex-direction: column;
         align-items: center;
     }
 
     input {
         width: 100%;
-        height: 50px;
-        font-size: 18px;
+        height: 40px;
+        font-size: 14px;
         border-radius: 25px;
         margin-bottom: 10px;
     }
 
     .btn5 {
         width: 100%;
-        height: 50px;
-        font-size: 24px;
+        height: 40px;
+        font-size: 20px;
         border-radius: 25px;
+        transition: .5s;
+    }
+    .btn5:hover {
+        background-color: transparent;
+        border: 4px solid #F64B3C;
+        color: #F64B3C;
     }
 }
 
@@ -904,16 +975,19 @@ input {
     .section9 {
         flex-direction: column;
         padding: 20px;
+        height: auto;
     }
 
     .title {
         width: 90%;
         height: auto;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .para15 {
         font-size: 18px;
+        margin-bottom: 15px;
     }
 
     .icon {
@@ -928,24 +1002,31 @@ input {
     }
 
     .more_about {
-        width: 90%;
+        width: 100%;
         height: auto;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
+        align-items: start;
         gap: 20px;
+        text-align: center;
     }
 
     .about,
     .services,
     .other {
-        width: 100%;
+        text-align: center;
         align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hing{
+        font-size: 25px;
     }
 
     .abo_opt,
     .ser_opt,
     .oth_opt {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
